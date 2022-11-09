@@ -1,7 +1,6 @@
-import React from "react";
-import { Fragment } from 'react'
+import React, {Fragment} from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { Disclosure, Transition } from "@headlessui/react";
+import { Disclosure} from "@headlessui/react";
 import { CgClose } from "react-icons/cg";
 
 
