@@ -4,11 +4,21 @@ import { Disclosure } from "@headlessui/react";
 import { CgClose } from "react-icons/cg";
 import { SocialIcon } from "react-social-icons"
 import { motion } from "framer-motion"
-
+import { Cursor, useTypewriter }from "react-simple-typewriter"
 
 type Props = {}
 
-export default function Sidear() {
+export default function Sidear({}: Props) {
+    const [text, count] = useTypewriter({
+        words: [
+            "#Welcome",
+            "Dev-Life.tsx",
+            "<Hire Me/>",
+
+        ],
+        loop: true,
+        delaySpeed: 2000,
+    });
     return (
         <div>
             <Disclosure defaultOpen as="nav">
@@ -23,6 +33,10 @@ export default function Sidear() {
                     <Disclosure.Button as={Fragment}>
                         <CgClose className="block md:hidden h-6 w-6 text-black hover:bg-gray-300 rounded-full" />
                     </Disclosure.Button>
+                    <div className="flex justify-center pb-6">
+                        <span >{text}</span>
+                        <Cursor cursorColor="F7AB0A"/>
+                    </div>
                     <div className="">
                         <motion.div
                             initial={{
