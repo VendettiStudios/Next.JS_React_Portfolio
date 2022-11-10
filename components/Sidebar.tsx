@@ -3,6 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { Disclosure } from "@headlessui/react";
 import { CgClose } from "react-icons/cg";
 import { SocialIcon } from "react-social-icons"
+import { motion } from "framer-motion"
 
 
 type Props = {}
@@ -23,17 +24,60 @@ export default function Sidear() {
                         <CgClose className="block md:hidden h-6 w-6 text-black hover:bg-gray-300 rounded-full" />
                     </Disclosure.Button>
                     <div className="">
-                        <div className="flex justify-center pt-6;">
+                        <motion.div
+                            initial={{
+                                x: -500,
+                                opacity: 0,
+                                scale: 0.5
+                            }}
+                            animate={{
+                                x: 0,
+                                opacity: 1,
+                                scale: 1,
+                            }}
+                            transition={{
+                                duration: 1.5,
+                            }}
+                            className="flex justify-center pt-6;">
                             <SocialIcon
-                            url="https://linkedin.com/in/hollowaydaniel"
-                        /></div>
-                        <div className="flex justify-center pt-6">
+                                url="https://linkedin.com/in/hollowaydaniel"
+                            />
+                            </motion.div>
+                        <motion.div className="flex justify-center pt-6"
+                            initial={{
+                                x: 500,
+                                opacity: 0,
+                                scale: 0.5
+                            }}
+                            animate={{
+                                x: 0,
+                                opacity: 1,
+                                scale: 1,
+                            }}
+                            transition={{
+                                duration: 1.5,
+                            }}>
                             <SocialIcon
-                            url="https://github.com/vendettistudios" /></div>
-                        <div className="flex justify-center pt-6"> <SocialIcon
-                            network="email"
-                        />
-                        </div>
+                                url="https://github.com/vendettistudios" />
+                        </motion.div>
+                        <motion.div className="flex justify-center pt-6"
+                            initial={{
+                                x: -500,
+                                opacity: 0,
+                                scale: 0.5
+                            }}
+                            animate={{
+                                x: 0,
+                                opacity: 1,
+                                scale: 1,
+                            }}
+                            transition={{
+                                duration: 1.5,
+                            }}>
+                                <SocialIcon
+                                network="email"
+                            />
+                        </motion.div>
                     </div>
                 </Disclosure.Panel>
             </Disclosure>
