@@ -4,11 +4,13 @@ import { Disclosure } from "@headlessui/react";
 import { CgClose } from "react-icons/cg";
 import { SocialIcon } from "react-social-icons"
 import { motion } from "framer-motion"
-import { Cursor, useTypewriter }from "react-simple-typewriter"
+import { Cursor, useTypewriter } from "react-simple-typewriter"
+import Image from 'next/image'
+
 
 type Props = {}
 
-export default function Sidear({}: Props) {
+export default function Sidear({ }: Props) {
     const [text, count] = useTypewriter({
         words: [
             "#Welcome",
@@ -35,8 +37,14 @@ export default function Sidear({}: Props) {
                     </Disclosure.Button>
                     <div className="flex justify-center pb-6">
                         <span >{text}</span>
-                        <Cursor cursorColor="F7AB0A"/>
+                        <Cursor cursorColor="F7AB0A" />
                     </div>
+                        <Image
+                        className="relative rounded-fill h-32 w-32 mx-auto rounded mb-6"
+                        src="/selfie.png"
+                        alt="selfie"
+                        width={200}
+                        height={200}/>
                     <div className="">
                         <motion.div
                             initial={{
@@ -56,7 +64,7 @@ export default function Sidear({}: Props) {
                             <SocialIcon
                                 url="https://linkedin.com/in/hollowaydaniel"
                             />
-                            </motion.div>
+                        </motion.div>
                         <motion.div className="flex justify-center pt-6"
                             initial={{
                                 x: 500,
@@ -88,7 +96,7 @@ export default function Sidear({}: Props) {
                             transition={{
                                 duration: 1.5,
                             }}>
-                                <SocialIcon
+                            <SocialIcon
                                 network="email"
                             />
                         </motion.div>
