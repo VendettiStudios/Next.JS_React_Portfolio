@@ -55,7 +55,6 @@ export default function Sidear({ }: Props) {
                     grid-flow-col
                     lg:grid-cols-1
                     justify-center">
-                        
                         <Link href="about">
                             <button className="hover:underline underline-offset-4 decoration-yellow-500 navButton ">About</button>
                         </Link>
