@@ -21,7 +21,6 @@ export default function Sidear({ }: Props) {
         loop: true,
         delaySpeed: 2000,
     });
-    // const [isOpen, setOpen] = useState(false)
 
     return (
         <div>
@@ -31,7 +30,7 @@ export default function Sidear({ }: Props) {
                         className="block h-6 w-6"
                         aria-hidden="true"
                     />
-                    {/* <Hamburger toggled={isOpen} toggle={setOpen} /> */}
+                    <Hamburger />
                 </Disclosure.Button>
 
                 <Disclosure.Panel className=" lg:w-1/5 overflow-auto touch-pan-y p-6 w-full h-screen bg-[rgb(36,36,36)] fixed top-0 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200">
