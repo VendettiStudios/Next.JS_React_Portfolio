@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { useState, Fragment } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Disclosure } from "@headlessui/react";
 import { CgClose } from "react-icons/cg";
@@ -8,6 +8,7 @@ import { Cursor, useTypewriter } from "react-simple-typewriter"
 import Image from 'next/image'
 import BackgroundCircles from './BackgroundCircles'
 import Link from 'next/link'
+import { Spin as Hamburger } from 'hamburger-react'
 type Props = {}
 
 export default function Sidear({ }: Props) {
@@ -20,15 +21,17 @@ export default function Sidear({ }: Props) {
         loop: true,
         delaySpeed: 2000,
     });
+    const [isOpen, setOpen] = useState(false)
 
     return (
         <div>
             <Disclosure defaultOpen as="nav">
-                <Disclosure.Button className="absolute top-4 right-4 inline-flex items-center peer justify-center rounded-full p-2 text-white hover:bg-gray-900 hover:text-white  hover:ring-2 hover:ring-inset hover:ring-white group md:hidden hover:motion-safe:animate-spin">
-                    <GiHamburgerMenu
+                <Disclosure.Button className="absolute top-4 right-4 inline-flex items-center peer justify-center rounded-full p-2 text-white hover:bg-gray-900 hover:text-white  hover:ring-2 hover:ring-inset hover:ring-white group hover:motion-safe:animate-spin">
+                    {/* <GiHamburgerMenu
                         className="block md:hidden h-6 w-6"
                         aria-hidden="true"
-                    />
+                    /> */}
+                    <Hamburger toggled={isOpen} toggle={setOpen} />
                 </Disclosure.Button>
 
                 <Disclosure.Panel className=" lg:w-1/5 overflow-auto touch-pan-y p-6 w-full h-screen bg-[rgb(36,36,36)] fixed top-0 -left-96 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200">
