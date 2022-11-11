@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 import { Cursor, useTypewriter } from "react-simple-typewriter"
 import Image from 'next/image'
 import BackgroundCircles from './BackgroundCircles'
-
+import Link from 'next/link'
 type Props = {}
 
 export default function Sidear({ }: Props) {
@@ -31,12 +31,12 @@ export default function Sidear({ }: Props) {
                     />
                 </Disclosure.Button>
 
-                <Disclosure.Panel className=" lg:w-2/12 overflow-auto touch-pan-y p-6 w-full h-screen bg-[rgb(36,36,36)] fixed top-0 -left-96 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200">
+                <Disclosure.Panel className=" lg:w-1/5 overflow-auto touch-pan-y p-6 w-full h-screen bg-[rgb(36,36,36)] fixed top-0 -left-96 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200">
                     <Disclosure.Button as={Fragment}>
                         <CgClose className="block md:hidden h-6 w-6 text-black hover:bg-gray-300 rounded-full" />
                     </Disclosure.Button>
                     <div className="flex justify-center pb-6">
-                        <span >{text}</span>
+                        <span className="text-white font-medium" >{text}</span>
                         <Cursor cursorColor="F7AB0A" />
                     </div>
                     <div className="pb-6 pt-6 flex flex-col spaye-y-8 items-center text-center
@@ -48,10 +48,27 @@ export default function Sidear({ }: Props) {
                             width={200}
                             height={200} />
                     </div>
-                    <div>
-                        <a className="flex justify-center pt-6 mt-6">About</a>
-                        <a className="flex justify-center pt-4 ">About</a>
-                        <a className="flex justify-center pt-4 ">About</a>
+                    <div className="pt-5 mt-5 z-20 lg:pl-0 
+                    justify-items-center grid lg:grid-flow-row
+                    grid-flow-col
+                    lg:grid-cols-1
+                    justify-center">
+                        <Link href="about">
+                            <button className="navButton pl-6
+                            ml-2 mr-1
+                            lg:mx-auto
+                            lg:pr-6">About</button>
+                        </Link>
+                        <Link href="#skills">
+                            <button className="navButton pl-3 md:mx-2
+                            lg:pr-5
+                            ">Skills</button>
+                        </Link>
+                        <Link href="#projects">
+                            <button className="navButton pl-3 
+                            ml-1 lg:mx-auto lg:pl-6
+                            lg:pr-5">Projects</button>
+                        </Link>
                     </div>
 
                     <div className="">

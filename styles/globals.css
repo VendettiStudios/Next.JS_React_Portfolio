@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,5 +7,8 @@
 @layer base {
     body{
     background-color: black;
+}
+.navButton{
+    @apply py-2 border-[#242424] rounded-full uppercase text-sm tracking-widest text-gray-500 hover:border-[#56A4E6]/75 hover:text-[#56A4E6]/75 flex justify-center
 }
 }
