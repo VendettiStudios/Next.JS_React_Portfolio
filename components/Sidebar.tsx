@@ -72,6 +72,11 @@ export default function Sidear({ }: Props) {
                             ml-1 lg:mx-auto lg:pl-6
                             lg:pr-5">Projects</button>
                         </Link>
+                        <Link href="#Contact">
+                            <button className="navButton pl-3
+                            ml-1 lg:mx-auto lg:pl-6
+                            lg:pr-5">Contact</button>
+                        </Link>
                     </div>
 
                     <div className="">
