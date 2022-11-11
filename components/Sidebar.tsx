@@ -25,7 +25,7 @@ export default function Sidear({ }: Props) {
     return (
         <div>
             <Disclosure as="nav">
-                <Disclosure.Button className="absolute top-1 left-1inline-flex items-center peer justify-center rounded-full p-2 text-white group hover:motion-safe:animate-spin z-10 ">
+                <Disclosure.Button className="absolute top-1 left-1 inline-flex items-center peer justify-center rounded-full p-2 text-white group hover:motion-safe:animate-spin z-10 ">
                     {/* <GiHamburgerMenu
                         className="block h-6 w-6"
                         aria-hidden="true"
