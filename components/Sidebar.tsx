@@ -50,22 +50,24 @@ export default function Sidear({ }: Props) {
                             width={200}
                             height={200} />
                     </div>
+                    
+                    
                     <div className="pt-5 mt-5 z-20 lg:pl-0
                     justify-items-center grid lg:grid-flow-row
                     grid-flow-col
                     lg:grid-cols-1
                     justify-center">
                         <Link href="about">
-                            <button className="hover:underline underline-offset-4 decoration-yellow-500 navButton ">About</button>
+                            <button className="navButton">About</button>
                         </Link>
                         <Link href="#skills">
-                            <button className="navButton hover:underline underline-offset-4 decoration-yellow-500">Skills</button>
+                            <button className="navButton">Skills</button>
                         </Link>
                         <Link href="#projects">
-                            <button className="navButton hover:underline underline-offset-4 decoration-yellow-500">Projects</button>
+                            <button className="navButton">Projects</button>
                         </Link>
                         <Link href="#Contact">
-                            <button className="navButton hover:underline underline-offset-4 decoration-yellow-500">Contact</button>
+                            <button className="navButton">Contact</button>
                         </Link>
                     </div>
 
