@@ -6,7 +6,7 @@ import { SocialIcon } from "react-social-icons"
 import { motion } from "framer-motion"
 import { Cursor, useTypewriter } from "react-simple-typewriter"
 import Image from 'next/image'
-
+import BackgroundCircles from './BackgroundCircles'
 
 type Props = {}
 
@@ -31,7 +31,7 @@ export default function Sidear({ }: Props) {
                     />
                 </Disclosure.Button>
 
-                <Disclosure.Panel className=" lg:w-2/12 overflow-auto touch-pan-y p-6 w-full h-screen bg-gray-400 fixed top-0 -left-96 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200">
+                <Disclosure.Panel className=" lg:w-2/12 overflow-auto touch-pan-y p-6 w-full h-screen bg-[rgb(36,36,36)] fixed top-0 -left-96 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200">
                     <Disclosure.Button as={Fragment}>
                         <CgClose className="block md:hidden h-6 w-6 text-black hover:bg-gray-300 rounded-full" />
                     </Disclosure.Button>
@@ -39,12 +39,21 @@ export default function Sidear({ }: Props) {
                         <span >{text}</span>
                         <Cursor cursorColor="F7AB0A" />
                     </div>
+                    <div className="pb-6 pt-6 flex flex-col spaye-y-8 items-center text-center
+                    "><BackgroundCircles />
                         <Image
-                        className="relative rounded-fill h-32 w-32 mx-auto rounded mb-6"
-                        src="/selfie.png"
-                        alt="selfie"
-                        width={200}
-                        height={200}/>
+                            className="flex justify-center h-32 w-32 mx-auto rounded object-cover"
+                            src="/selfie.png"
+                            alt="selfie"
+                            width={200}
+                            height={200} />
+                    </div>
+                    <div>
+                        <a className="flex justify-center pt-6 mt-6">About</a>
+                        <a className="flex justify-center pt-4 ">About</a>
+                        <a className="flex justify-center pt-4 ">About</a>
+                    </div>
+
                     <div className="">
                         <motion.div
                             initial={{
@@ -60,7 +69,7 @@ export default function Sidear({ }: Props) {
                             transition={{
                                 duration: 1.5,
                             }}
-                            className="flex justify-center pt-6;">
+                            className="flex justify-center pt-6 mt-6;">
                             <SocialIcon
                                 url="https://linkedin.com/in/hollowaydaniel"
                             />
