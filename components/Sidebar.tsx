@@ -25,15 +25,15 @@ export default function Sidear({ }: Props) {
     return (
         <div>
             <Disclosure as="nav">
-                <Disclosure.Button className="absolute top-4 right-4 inline-flex items-center peer justify-center rounded-full p-2 text-white hover:bg-gray-900 hover:text-white  hover:ring-2 hover:ring-inset hover:ring-white group hover:motion-safe:animate-spin">
+                <Disclosure.Button className="absolute top-1 left-1inline-flex items-center peer justify-center rounded-full p-2 text-white group hover:motion-safe:animate-spin z-10 ">
                     {/* <GiHamburgerMenu
                         className="block h-6 w-6"
                         aria-hidden="true"
                     /> */}
-                    <Hamburger />
+                    <Hamburger size={20} />
                 </Disclosure.Button>
 
-                <Disclosure.Panel className=" lg:w-1/5 overflow-auto touch-pan-y p-6 w-full h-screen bg-[rgb(36,36,36)] fixed top-0 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200">
+                <Disclosure.Panel className=" lg:w-1/5 overflow-auto touch-pan-y p-6 w-full h-screen bg-[rgb(36,36,36)] fixed top-0 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200 z-0">
                     <Disclosure.Button as={Fragment}>
                         <CgClose className="block md:hidden h-6 w-6 text-black hover:bg-gray-300 rounded-full" />
                     </Disclosure.Button>
