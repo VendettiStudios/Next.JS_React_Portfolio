@@ -117,7 +117,7 @@ export default function Sidear({ }: Props) {
                             <SocialIcon
                                 url="https://github.com/vendettistudios"
                                 fgColor="white"
-                                bgColor="transparent" />
+                                bgColor="transparent"/>
                         </motion.div>
                         <motion.div className="flex justify-center pt-6"
                             initial={{
