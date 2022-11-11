@@ -8,7 +8,7 @@ import { Cursor, useTypewriter } from "react-simple-typewriter"
 import Image from 'next/image'
 import BackgroundCircles from './BackgroundCircles'
 import Link from 'next/link'
-import { Spin as Hamburger } from 'hamburger-react'
+import { Spiral as Hamburger } from 'hamburger-react'
 type Props = {}
 
 export default function Sidear({ }: Props) {
@@ -21,16 +21,16 @@ export default function Sidear({ }: Props) {
         loop: true,
         delaySpeed: 2000,
     });
-
+    const [isOpen, setOpen] = useState(false)
     return (
         <div>
             <Disclosure as="nav">
-                <Disclosure.Button className="absolute top-1 left-1 inline-flex items-center peer justify-center rounded-full p-2 text-white group hover:motion-safe:animate-spin z-10 ">
+                <Disclosure.Button className="absolute top-1 left-1 inline-flex items-center peer justify-center rounded-full p-2 text-black group z-10 ">
                     {/* <GiHamburgerMenu
                         className="block h-6 w-6"
                         aria-hidden="true"
                     /> */}
-                    <Hamburger size={20} />
+                    <Hamburger size= {20} />
                 </Disclosure.Button>
 
                 <Disclosure.Panel className=" lg:w-1/5 overflow-auto touch-pan-y p-6 w-full h-screen bg-[rgb(36,36,36)] fixed top-0 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200 z-0">
@@ -55,17 +55,18 @@ export default function Sidear({ }: Props) {
                     grid-flow-col
                     lg:grid-cols-1
                     justify-center">
+                        
                         <Link href="about">
-                            <button className="navButton ">About</button>
+                            <button className="hover:underline underline-offset-4 decoration-yellow-500 navButton ">About</button>
                         </Link>
                         <Link href="#skills">
-                            <button className="navButton">Skills</button>
+                            <button className="navButton hover:underline underline-offset-4 decoration-yellow-500">Skills</button>
                         </Link>
                         <Link href="#projects">
-                            <button className="navButton ">Projects</button>
+                            <button className="navButton hover:underline underline-offset-4 decoration-yellow-500">Projects</button>
                         </Link>
                         <Link href="#Contact">
-                            <button className="navButton ">Contact</button>
+                            <button className="navButton hover:underline underline-offset-4 decoration-yellow-500">Contact</button>
                         </Link>
                     </div>
 
