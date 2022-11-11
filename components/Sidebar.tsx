@@ -96,6 +96,8 @@ export default function Sidear({ }: Props) {
                             className="flex justify-center pt-6 mt-6;">
                             <SocialIcon
                                 url="https://linkedin.com/in/hollowaydaniel"
+                                fgColor="white"
+                                bgColor="transparent"
                             />
                         </motion.div>
                         <motion.div className="flex justify-center pt-6"
@@ -113,7 +115,9 @@ export default function Sidear({ }: Props) {
                                 duration: 1.5,
                             }}>
                             <SocialIcon
-                                url="https://github.com/vendettistudios" />
+                                url="https://github.com/vendettistudios"
+                                fgColor="white"
+                                bgColor="transparent" />
                         </motion.div>
                         <motion.div className="flex justify-center pt-6"
                             initial={{
@@ -131,6 +135,8 @@ export default function Sidear({ }: Props) {
                             }}>
                             <SocialIcon
                                 network="email"
+                                fgColor="white"
+                                bgColor="transparent"
                             />
                         </motion.div>
                     </div>
