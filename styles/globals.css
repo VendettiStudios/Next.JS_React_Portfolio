@@ -8,7 +8,10 @@
     body{
     background-color: black;
 }
-.navButton{
-    @apply py-2 border-[#242424] rounded-full uppercase text-sm tracking-widest text-gray-500 hover:border-[#56A4E6]/75 hover:text-[#56A4E6]/75 flex justify-center
 }
+
+@layer components {
+    .navButton{
+        @apply py-2 border-[#242424] rounded-full uppercase text-sm tracking-widest text-gray-500 hover:border-[#56A4E6]/75 hover:text-[#56A4E6]/75 flex justify-center
+    }
 }

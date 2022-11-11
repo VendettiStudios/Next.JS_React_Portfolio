@@ -16,11 +16,11 @@ export default function Sidear({ }: Props) {
             "#Welcome",
             "Dev-Life.tsx",
             "<Hire Me/>",
-
         ],
         loop: true,
         delaySpeed: 2000,
     });
+
     return (
         <div>
             <Disclosure defaultOpen as="nav">
@@ -48,7 +48,7 @@ export default function Sidear({ }: Props) {
                             width={200}
                             height={200} />
                     </div>
-                    <div className="pt-5 mt-5 z-20 lg:pl-0 
+                    <div className="pt-5 mt-5 z-20 lg:pl-0
                     justify-items-center grid lg:grid-flow-row
                     grid-flow-col
                     lg:grid-cols-1
@@ -65,7 +65,7 @@ export default function Sidear({ }: Props) {
                             ">Skills</button>
                         </Link>
                         <Link href="#projects">
-                            <button className="navButton pl-3 
+                            <button className="navButton pl-3
                             ml-1 lg:mx-auto lg:pl-6
                             lg:pr-5">Projects</button>
                         </Link>
