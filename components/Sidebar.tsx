@@ -56,25 +56,16 @@ export default function Sidear({ }: Props) {
                     lg:grid-cols-1
                     justify-center">
                         <Link href="about">
-                            <button className="navButton pl-6
-                            ml-2 mr-1
-                            lg:mx-auto
-                            lg:pr-6">About</button>
+                            <button className="navButton ">About</button>
                         </Link>
                         <Link href="#skills">
-                            <button className="navButton pl-3 md:mx-2
-                            lg:pr-5
-                            ">Skills</button>
+                            <button className="navButton">Skills</button>
                         </Link>
                         <Link href="#projects">
-                            <button className="navButton pl-3
-                            ml-1 lg:mx-auto lg:pl-6
-                            lg:pr-5">Projects</button>
+                            <button className="navButton ">Projects</button>
                         </Link>
                         <Link href="#Contact">
-                            <button className="navButton pl-3
-                            ml-1 lg:mx-auto lg:pl-6
-                            lg:pr-5">Contact</button>
+                            <button className="navButton ">Contact</button>
                         </Link>
                     </div>
 
