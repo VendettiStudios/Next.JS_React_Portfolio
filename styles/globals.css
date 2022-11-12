@@ -20,7 +20,7 @@
   }
   #videoBG {
     position:fixed;
-    z-index:1;
+    z-index:0;
   }
 @media (min-aspect-ration: 16/9){
     #videoBGP{
@@ -34,5 +34,12 @@
         height:100%;
     }
 }
+/* @media (max-width: 767px){
+    #videoBG{
+        display:none;
+    }
+    body {
+    }
+} */
 }
 

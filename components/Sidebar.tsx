@@ -11,8 +11,8 @@ import Link from 'next/link'
 import { Spiral as Hamburger } from 'hamburger-react'
 type Props = {}
 
-export default function Sidear({ }: Props) {
-    const [text, count] = useTypewriter({
+export default function Sidear(){
+    const [text] = useTypewriter({
         words: [
             "#Welcome",
             "Dev-Life.tsx",
@@ -21,19 +21,14 @@ export default function Sidear({ }: Props) {
         loop: true,
         delaySpeed: 2000,
     });
-    const [isOpen, setOpen] = useState(false)
     return (
         <div>
             <Disclosure as="nav">
-                <Disclosure.Button className="absolute top-1 left-1 inline-flex items-center peer justify-center rounded-full p-2 text-black group z-10 ">
-                    {/* <GiHamburgerMenu
-                        className="block h-6 w-6"
-                        aria-hidden="true"
-                    /> */}
+                <Disclosure.Button className="absolute top-1 left-1 inline-flex items-center peer justify-center rounded-full p-2 text-black group z-30 ">
                     <Hamburger size= {20} />
                 </Disclosure.Button>
 
-                <Disclosure.Panel className=" lg:w-1/5 overflow-auto touch-pan-y p-6 w-full h-screen bg-[rgb(36,36,36)] fixed top-0 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200 z-0">
+                <Disclosure.Panel className=" lg:w-1/5 overflow-auto touch-pan-y p-6 w-full h-screen bg-[rgb(36,36,36)] fixed top-0 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200 z-20">
                     <Disclosure.Button as={Fragment}>
                         <CgClose className="block md:hidden h-6 w-6 text-black hover:bg-gray-300 rounded-full" />
                     </Disclosure.Button>
