@@ -5,10 +5,34 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    background-color: white;
+  }
 }
 
 @layer components {
-    .navButton{
-        @apply py-2 px-3 border-[#242424] rounded-full uppercase text-sm tracking-widest text-gray-500 hover:border-[#56A4E6]/75 hover:text-[#56A4E6]/75 flex justify-center hover:animate-pulse hover:underline underline-offset-4 decoration-yellow-500
+  .navButton {
+    @apply py-2 px-3 border-[#242424] rounded-full uppercase text-sm tracking-widest text-gray-500 hover:border-[#56A4E6]/75 hover:text-[#56A4E6]/75 flex justify-center hover:animate-pulse hover:underline underline-offset-4 decoration-yellow-500;
+  }
+  .navBar {
+    position:absolute;
+    height:100vh;
+  }
+  #videoBG {
+    position:fixed;
+    z-index:1;
+  }
+@media (min-aspect-ration: 16/9){
+    #videoBGP{
+        width:100%;
+        height:auto;
     }
 }
+@media (min-aspect-ration: 16/9){
+    #videoBGP{
+        width:auto;
+        height:100%;
+    }
+}
+}
+

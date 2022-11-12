@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Hero from '../components/Hero'
 import Sidebar from '../components/Sidebar'
 
 
@@ -14,6 +15,7 @@ export default function Home() {
       {/* Sidebar */}
       <Sidebar />
       {/* Hero */}
+      <Hero />
       {/* About */}
       {/* Skills */}
       {/* Projects */}
