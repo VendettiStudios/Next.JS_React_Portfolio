@@ -1,5 +1,4 @@
-import React, { useState, Fragment } from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
+import React, { Fragment } from "react";
 import { Disclosure } from "@headlessui/react";
 import { CgClose } from "react-icons/cg";
 import { SocialIcon } from "react-social-icons"
@@ -29,14 +28,11 @@ export default function Sidear(){
                 </Disclosure.Button>
 
                 <Disclosure.Panel className=" lg:w-1/5 overflow-auto touch-pan-y p-6 w-full h-screen bg-[rgb(36,36,36)] fixed top-0 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200 z-20">
-                    <Disclosure.Button as={Fragment}>
-                        <CgClose className="block md:hidden h-6 w-6 text-black hover:bg-gray-300 rounded-full" />
-                    </Disclosure.Button>
                     <div className="flex justify-center pb-6">
                         <span className="text-white font-medium" >{text}</span>
                         <Cursor cursorColor="F7AB0A" />
                     </div>
-                    <div className="pb-6 pt-6 flex flex-col spaye-y-8 items-center text-center
+                    <div className="pb-6 pt-6 flex flex-col items-center text-center
                     "><BackgroundCircles />
                         <Image
                             className="flex justify-center h-32 w-32 mx-auto rounded object-cover"
@@ -45,9 +41,7 @@ export default function Sidear(){
                             width={200}
                             height={200} />
                     </div>
-                    
-                    
-                    <div className="pt-5 mt-5 z-20 lg:pl-0
+                    <div className="pt-5 mt-5 z-30 lg:pl-0
                     justify-items-center grid lg:grid-flow-row
                     grid-flow-col
                     lg:grid-cols-1

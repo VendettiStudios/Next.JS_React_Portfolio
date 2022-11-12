@@ -17,7 +17,6 @@
   }
   #videoBG {
     position:fixed;
-    z-index:0;
   }
 @media (min-aspect-ration: 16/9){
     #videoBGP{
