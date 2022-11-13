@@ -19,6 +19,7 @@
   }
   .overlay{
     height:100%;
+    position:fixed;
     @apply absolute h-screen w-full opacity-20 bg-black z-20 lg:opacity-25
   }
 .content{
