@@ -16,9 +16,6 @@
     position:absolute;
     height:100vh;
   }
-  /* #videoBG {
-    position:relative;
-  } */
   .content{
     position: absolute;
     width: 100%;
@@ -29,8 +26,9 @@
     justify-content: center;
     align-items: center;
   }
+
 /* @media (min-aspect-ration: 16/9){
-    #videoBGP{
+    #iframe{
         width:100%;
         height:auto;
     }
@@ -41,8 +39,8 @@
         height:100%;
     }
 } */
-/* @media (max-width: 767px){
-    #videoBG{
+@media (max-width: 767px){
+    #stream{
         display:none;
     }
     body {
@@ -50,6 +48,6 @@
         background-size:cover;
         height:100vh;
     }
-} */
+}
 }
 
