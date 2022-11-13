@@ -32,7 +32,7 @@
     @apply text-white fixed grid z-20
   }
   #stream{
-    @apply z-20
+    @apply z-20 h-screen
   }
 @media (max-width: 767px){
     #stream{
