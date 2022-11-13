@@ -1,7 +1,6 @@
 import React from 'react'
 import { Stream } from "@cloudflare/stream-react";
-import ReactPlayer from "react-player"
-import { isAbsolute, relative } from 'path';
+
 
 type Props = {}
 
