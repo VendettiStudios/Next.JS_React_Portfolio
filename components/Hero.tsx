@@ -24,7 +24,7 @@ const Hero = (props: Props) => {
             <source src="https://customer-y9cdb7xgb9ciakj4.cloudflarestream.com/7102b82195e7169ae2da16b6023be17f/iframe?" type="video/mp4" />
                 </video> */}
 
-{/* <iframe src='c'
+            {/* <iframe src='c'
 id="iframe"
 style={{
     border: 0,
@@ -39,20 +39,23 @@ style={{
         title='video'
 /> */}
 
-<div id="stream">
-      <Stream
-      src={videoID}
-      className="aspect-video"
-      autoplay
-      loop
-      />
-    </div>
+            <div id="stream">
+                <Stream
+                    src={videoID}
+                    className="aspect-video"
+                    autoplay
+                    loop
+                />
+            </div>
 
 
             <div className="content">
-                <header className="fixed z-20 grid row-auto justify-items-center text-white text-xl lg:text-5xl">
-                    <h1 className="pb-4 lg:pb-6">Hello, I'm Daniel Holloway</h1>
-                    <p className="lg:pt-6">Full-Stack Developer and Designer</p>
+                <header className="grid justify-items-center">
+                    <span className="flex">
+                        <h1 className="pb-4 lg:pb-6 font-Comfortaa text-3xl lg:text-5xl pt-1">Hello, I'm</h1>
+                        <h1 className="font-Dancing lg:pl-4 pl-2 font-black text-3xl lg:text-5xl">Daniel Holloway</h1>
+                    </span>
+                    <h2 className="lg:pt-6 font-Comfortaa">Full-Stack Developer and Designer</h2>
                 </header>
             </div>
         </div>

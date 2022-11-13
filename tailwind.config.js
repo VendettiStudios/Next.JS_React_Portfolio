@@ -8,7 +8,8 @@ module.exports = {
         extend: {
             fontFamily:{
                 Comfortaa:["Comfortaa, cursive"],
-                Dancing:["Dancing Script, cursive"]
+                Dancing:["Dancing Script, cursive"],
+                Hind:["'Hind Madurai', sans-serif"]
             }
         },
     },
