@@ -8,7 +8,7 @@ const Hero = (props: Props) => {
     const videoID = "https://customer-y9cdb7xgb9ciakj4.cloudflarestream.com/7102b82195e7169ae2da16b6023be17f/iframe?muted=true&loop=true&autoplay=true&controls=false"
     return (
         <div className="">
-            <div className="overlay"></div>
+            <div className="overlay fixed"></div>
             <div id="stream">
                 <Stream
                     src={videoID}
