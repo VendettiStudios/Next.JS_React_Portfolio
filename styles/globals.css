@@ -34,7 +34,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @apply text-white fixed grid -z-20
+    @apply text-white fixed grid z-0
   }
   #stream{
     height:100%;

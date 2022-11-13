@@ -9,7 +9,7 @@ import Link from 'next/link'
 import { Spiral as Hamburger } from 'hamburger-react'
 type Props = {}
 
-export default function Sidear(){
+export default function Sidear() {
     const [text] = useTypewriter({
         words: [
             "#Welcome",
@@ -23,16 +23,17 @@ export default function Sidear(){
         <div>
             <Disclosure as="nav">
                 <Disclosure.Button className="absolute top-1 left-1 inline-flex items-center peer justify-center rounded-full p-2 text-slate-700 group z-50 ">
-                    <Hamburger size= {20} />
+                    <Hamburger size={20} />
                 </Disclosure.Button>
 
                 <Disclosure.Panel className=" lg:w-1/5 overflow-auto touch-pan-y p-6 w-full h-screen bg-[rgb(36,36,36)] fixed top-0 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200 z-40">
-                    <div className="flex justify-center pb-6">
-                        <span className="text-white font-medium" >{text}</span>
+                    <div className="flex justify-center pb-6 pt-6 mt-6">
+                        <span className="text-white font-medium mb-6" >{text}</span>
                         <Cursor cursorColor="F7AB0A" />
                     </div>
                     <div className="pb-6 pt-6 flex flex-col items-center text-center
-                    "><BackgroundCircles />
+                    ">
+                        <BackgroundCircles />
                         <Image
                             className="flex justify-center h-32 w-32 mx-auto rounded object-cover"
                             src="/selfie.png"
@@ -98,7 +99,7 @@ export default function Sidear(){
                             <SocialIcon
                                 url="https://github.com/vendettistudios"
                                 fgColor="white"
-                                bgColor="transparent"/>
+                                bgColor="transparent" />
                         </motion.div>
                         <motion.div className="flex justify-center pt-6"
                             initial={{
