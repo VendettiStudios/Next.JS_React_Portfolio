@@ -7,8 +7,8 @@ module.exports = {
     theme: {
         extend: {
             fontFamily:{
-                abc:["Comfortaa, cursive"],
-                
+                Comfortaa:["Comfortaa, cursive"],
+                Dancing:["Dancing Script, cursive"]
             }
         },
     },

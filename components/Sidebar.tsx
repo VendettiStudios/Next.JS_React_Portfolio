@@ -22,11 +22,11 @@ export default function Sidear(){
     return (
         <div>
             <Disclosure as="nav">
-                <Disclosure.Button className="absolute top-1 left-1 inline-flex items-center peer justify-center rounded-full p-2 text-black group z-30 ">
+                <Disclosure.Button className="absolute top-1 left-1 inline-flex items-center peer justify-center rounded-full p-2 text-black group z-40 ">
                     <Hamburger size= {20} />
                 </Disclosure.Button>
 
-                <Disclosure.Panel className=" lg:w-1/5 overflow-auto touch-pan-y p-6 w-full h-screen bg-[rgb(36,36,36)] fixed top-0 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200 z-20">
+                <Disclosure.Panel className=" lg:w-1/5 overflow-auto touch-pan-y p-6 w-full h-screen bg-[rgb(36,36,36)] fixed top-0 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200 z-30">
                     <div className="flex justify-center pb-6">
                         <span className="text-white font-medium" >{text}</span>
                         <Cursor cursorColor="F7AB0A" />
@@ -40,11 +40,11 @@ export default function Sidear(){
                             width={200}
                             height={200} />
                     </div>
-                    <div className="pt-5 mt-5 z-30 lg:pl-0
+                    <div className="pt-5 mt-5 z-40 lg:pl-0
                     justify-items-center grid lg:grid-flow-row
                     grid-flow-col
                     lg:grid-cols-1
-                    justify-center">
+                    justify-center font-Comfortaa">
                         <Link href="about">
                             <button className="navButton">About</button>
                         </Link>
