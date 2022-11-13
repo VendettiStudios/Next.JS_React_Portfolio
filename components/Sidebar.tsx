@@ -28,11 +28,10 @@ export default function Sidear() {
 
                 <Disclosure.Panel className=" lg:w-1/5 overflow-auto touch-pan-y p-6 w-full h-screen bg-[rgb(36,36,36)] fixed top-0 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200 z-40">
                     <div className="flex justify-center pb-6 pt-6 mt-6">
-                        <span className="text-white font-medium mb-6" >{text}</span>
+                        <span className="text-white font-medium" >{text}</span>
                         <Cursor cursorColor="F7AB0A" />
                     </div>
-                    <div className="pb-6 pt-6 flex flex-col items-center text-center
-                    ">
+                    <div className="pb-6 pt-6 flex flex-col items-center text-center mt-6">
                         <BackgroundCircles />
                         <Image
                             className="flex justify-center h-32 w-32 mx-auto rounded object-cover"

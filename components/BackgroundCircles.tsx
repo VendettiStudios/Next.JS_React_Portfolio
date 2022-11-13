@@ -17,12 +17,12 @@ function BackgroundCircles({ }: Props) {
         transition={{
             duration:2.5,
         }}
-        className ="absolute flex justify-center items-center mt-16">
-            <div className=" absolute border border-[#333333] rounded-full h-[140px] w-[140px] animate-ping opacity-31" />
-            <div className=" absolute border border-[#333333] rounded-full h-[150px] w-[150px] opacity-50" />
-            <div className=" absolute border border-[#333333] rounded-full h-[170px] w-[170px] animate-pulse opacity-75" />
-            <div className="rounded-full border border-[#4679A4] opacity-10 h-[195px] w-[195px] absolute animate-pulse" />
-            <div className="rounded-full border border-[#333333] h-[215px] w-[215px] absolute" />
+        className ="backgroundCircles">
+            <div className="circleA h-[140px] w-[140px] animate-ping opacity-31" />
+            <div className="circleA h-[150px] w-[150px] opacity-50" />
+            <div className="circleA h-[170px] w-[170px] animate-pulse opacity-75" />
+            <div className="circleB border border-[#4679A4] opacity-10 h-[195px] w-[195px] animate-pulse" />
+            <div className="circleA h-[215px] w-[215px]" />
         </motion.div>
     )
 }
