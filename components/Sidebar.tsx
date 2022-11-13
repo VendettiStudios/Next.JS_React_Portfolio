@@ -22,7 +22,7 @@ export default function Sidear(){
     return (
         <div>
             <Disclosure as="nav">
-                <Disclosure.Button className="absolute top-1 left-1 inline-flex items-center peer justify-center rounded-full p-2 text-black group z-40 ">
+                <Disclosure.Button className="absolute top-1 left-1 inline-flex items-center peer justify-center rounded-full p-2 text-slate-700 group z-40 ">
                     <Hamburger size= {20} />
                 </Disclosure.Button>
 

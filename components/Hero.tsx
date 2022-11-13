@@ -21,10 +21,10 @@ const Hero = (props: Props) => {
             <div className="content">
                 <header className="grid justify-items-center">
                     <span className="flex">
-                        <h1 className="font-Comfortaa pb-4 lg:pb-6 lg:text-5xl text-3xl pt-1">Hello, I'm</h1>
-                        <h1 className="font-Dancing font-black lg:pl-4 lg:text-5xl text-3xl pl-2">Daniel Holloway</h1>
+                        <h1 className="font-Comfortaa pb-4 lg:pb-6 lg:text-5xl text-3xl pt-1 text-zinc-300">Hello, I'm</h1>
+                        <h1 className="font-Dancing text-zinc-300 lg:pl-4 lg:text-5xl text-3xl pl-2">Daniel Holloway</h1>
                     </span>
-                    <h2 className="font-Comfortaa lg:pt-6 lg:text-2xl">Full-Stack Developer and Designer</h2>
+                    <h2 className="font-Comfortaa lg:pt-6 text-zinc-300 lg:text-2xl">Full-Stack Developer and Designer</h2>
                 </header>
             </div>
         </div>
