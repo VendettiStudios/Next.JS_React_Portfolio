@@ -34,7 +34,7 @@
   }
   #stream{
     height:100%;
-    @apply z-20 h-screen fixed
+    @apply z-20 h-screen
   }
 @media (max-width: 767px){
     #stream{
