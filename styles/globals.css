@@ -10,6 +10,9 @@
 }
 
 @layer components {
+    body {
+        background-color:black;
+    }
   .navButton {
     @apply py-2 px-3 border-[#242424] rounded-full uppercase text-sm tracking-widest text-gray-500 hover:border-[#56A4E6]/75 hover:text-[#56A4E6]/75 flex justify-center hover:animate-pulse hover:underline underline-offset-4 decoration-yellow-500;
   }
@@ -20,7 +23,7 @@
   .overlay{
     height:100%;
     position:fixed;
-    @apply absolute h-screen w-full opacity-20 bg-black z-20 lg:opacity-25
+    @apply absolute h-screen w-full opacity-20 bg-black -z-20 lg:opacity-25
   }
 .content{
     position: absolute;
@@ -31,11 +34,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @apply text-white fixed grid z-20
+    @apply text-white fixed grid -z-20
   }
   #stream{
     height:100%;
-    @apply z-20 h-screen
+    @apply -z-30 h-screen
   }
 @media (max-width: 767px){
     #stream{
