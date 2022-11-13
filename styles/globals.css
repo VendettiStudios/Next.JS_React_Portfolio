@@ -18,6 +18,7 @@
     height:100vh;
   }
   .overlay{
+    height:100%;
     @apply absolute h-screen w-full opacity-20 bg-black z-20 lg:opacity-25
   }
 .content{
@@ -32,6 +33,7 @@
     @apply text-white fixed grid z-20
   }
   #stream{
+    height:100%;
     @apply z-20 h-screen
   }
 @media (max-width: 767px){
