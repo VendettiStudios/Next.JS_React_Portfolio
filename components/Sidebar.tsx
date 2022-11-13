@@ -1,6 +1,5 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Disclosure } from "@headlessui/react";
-import { CgClose } from "react-icons/cg";
 import { SocialIcon } from "react-social-icons"
 import { motion } from "framer-motion"
 import { Cursor, useTypewriter } from "react-simple-typewriter"
