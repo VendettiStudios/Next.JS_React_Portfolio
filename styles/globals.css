@@ -29,7 +29,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @apply text-white fixed grid row-auto z-20
+    @apply text-white fixed grid z-20
   }
   #stream{
     @apply z-20
