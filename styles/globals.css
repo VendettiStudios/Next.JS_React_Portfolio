@@ -70,7 +70,7 @@
       display: none;
     }
     body {
-      background: url("/poster.jpg");
+      /* background: url("/poster.jpg"); */
       @apply z-10 w-auto min-w-full min-h-full max-w-none bg-no-repeat bg-cover;
     }
   }
