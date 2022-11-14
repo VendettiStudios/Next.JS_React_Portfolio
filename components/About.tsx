@@ -5,8 +5,9 @@ type Props = {}
 const About = (props: Props) => {
     return (
         <div className="aboutSection">
+            <div className="overlay2"></div>
             <div className="aboutContent">
-                <h3 className="pb-6 lg:text-3xl">ABOUT</h3>
+                <h3 className="pb-6 lg:text-3xl pt-6 mt-6">ABOUT</h3>
                 <div className="mx-6 px-6 lg:text-xl">
                     <p>My name is <b>Daniel Holloway</b>! I am passionate about <b>creative design, development, and innovation</b>. I express this currently via creating impactful <b>mobile friendly websites and applications</b>. I began learning graphic design and front end web design and development 10 years ago, and improved my foundation within UC Berkeley.
                         <br />
@@ -16,6 +17,7 @@ const About = (props: Props) => {
                     </p>
                 </div>
             </div>
+            
             <div className="ocean">
             <div className="wave"></div>
             <div className="wave"></div>
