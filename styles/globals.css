@@ -79,8 +79,8 @@
   .aboutSection {
     background: radial-gradient(
       ellipse at center,
-      rgba(115,150,193,1) 0%,
-      rgba(115,150,193,1) 35%,
+      rgba(136, 173, 219,1) 0%,
+      rgb(136, 173, 219) 35%,
       rgb(103,135,173)
     );
     overflow: hidden;
@@ -92,7 +92,7 @@
   .overlay2 {
     height: 100vh;
     position: relative;
-    @apply absolute w-full opacity-40 bg-black z-10 lg:opacity-25
+    @apply absolute w-full opacity-20 bg-black z-10 lg:opacity-10
   }
   .ocean { 
     height: 5%;
@@ -101,7 +101,7 @@
     bottom:0;
     left:0;
     background: #015871;
-    /* filter:invert(10%); */
+    filter:contrast() grayscale() invert() brightness(50);
     @apply z-0
   }
   .wave {
