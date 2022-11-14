@@ -31,6 +31,7 @@ export default function Sidear() {
                         <span className="" >{text}</span>
                         <Cursor cursorColor="F7AB0A" />
                     </div>
+                    
                     <div className="profileContainer">
                         <BackgroundCircles />
                         <Image
@@ -40,6 +41,7 @@ export default function Sidear() {
                             width={200}
                             height={200} />
                     </div>
+
                     <div className="navList">
                         <Link href="about">
                             <button className="navButton">About</button>

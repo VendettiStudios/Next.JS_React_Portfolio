@@ -5,7 +5,7 @@ type Props = {}
 const About = (props: Props) => {
   return (
     <div>
-        <h1 className="text-white z-50">About</h1>
+        <h1 className="head text-white bg-black">About</h1>
     </div>
   )
 }
