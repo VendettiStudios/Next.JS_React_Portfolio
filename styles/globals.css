@@ -21,7 +21,7 @@
     @apply lg:w-1/5 overflow-auto touch-pan-y p-6 w-full h-screen fixed top-0 lg:left-0 peer-focus:left-0  ease-out delay-150 duration-200 z-40;
   }
   .typeWriter {
-    @apply flex justify-center pb-6 pt-6 mt-6 text-white font-medium;
+    @apply flex justify-center pb-6 pt-6 mt-6 text-white
   }
   .profileContainer {
     @apply pb-6 pt-6 flex flex-col items-center text-center mt-6;
@@ -79,8 +79,11 @@
 /* About */
 @layer components {
     .aboutSection{
-        background-color:rgb(36,36,36);
+        background-color: #7fa4d1;
         @apply  text-white h-screen
+    }
+    .aboutContent{
+      @apply font-Comfortaa relative grid lg:grid-rows-2 items-center justify-center text-center overflow-hidden lg:mx-6 lg:px-6 pt-6
     }
 }
 /* Skills */
