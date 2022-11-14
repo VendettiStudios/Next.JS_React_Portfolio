@@ -16,6 +16,10 @@ const About = (props: Props) => {
                     </p>
                 </div>
             </div>
+            <div className="ocean">
+            <div className="wave"></div>
+            <div className="wave"></div>
+            </div>
         </div>
     )
 }
