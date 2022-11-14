@@ -22,7 +22,7 @@ const Hero = (props: Props) => {
 
                     <h1 className="font-Comfortaa lg:text-5xl text-3xl text-zinc-300">Hello,</h1>
 
-                    <span className="flex font-Comfortaa lg:pb-2 lg:text-5xl text-3xl text-zinc-300">
+                    <span className="flex lg:pb-2 lg:text-5xl text-3xl text-zinc-300">
                         <h1 className="font-Comfortaa text-zinc-300">I'm</h1>
                         <h1 className="font-Dancing text-zinc-300 pl-2 lg:pl-3 lg:text-5xl text-3xl">Daniel Holloway</h1>
                     </span>

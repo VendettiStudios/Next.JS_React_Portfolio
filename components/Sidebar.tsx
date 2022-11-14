@@ -22,29 +22,25 @@ export default function Sidear() {
     return (
         <div>
             <Disclosure as="nav">
-                <Disclosure.Button className="absolute top-1 left-1 inline-flex items-center peer justify-center rounded-full p-2 text-slate-700 group z-50 ">
+                <Disclosure.Button className="hamburger peer group">
                     <Hamburger size={20} />
                 </Disclosure.Button>
 
-                <Disclosure.Panel className=" lg:w-1/5 overflow-auto touch-pan-y p-6 w-full h-screen bg-[rgb(36,36,36)] fixed top-0 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200 z-40">
-                    <div className="flex justify-center pb-6 pt-6 mt-6">
-                        <span className="text-white font-medium" >{text}</span>
+                <Disclosure.Panel className="sideBar bg-[rgb(36,36,36)] peer:transition">
+                    <div className="typeWriter">
+                        <span className="" >{text}</span>
                         <Cursor cursorColor="F7AB0A" />
                     </div>
-                    <div className="pb-6 pt-6 flex flex-col items-center text-center mt-6">
+                    <div className="profileContainer">
                         <BackgroundCircles />
                         <Image
-                            className="flex justify-center h-32 w-32 mx-auto rounded object-cover"
+                            className="selfie"
                             src="/selfie.png"
                             alt="selfie"
                             width={200}
                             height={200} />
                     </div>
-                    <div className="pt-5 mt-5 z-50 lg:pl-0
-                    justify-items-center grid lg:grid-flow-row
-                    grid-flow-col
-                    lg:grid-cols-1
-                    justify-center font-Comfortaa">
+                    <div className="navList">
                         <Link href="about">
                             <button className="navButton">About</button>
                         </Link>
@@ -74,14 +70,14 @@ export default function Sidear() {
                             transition={{
                                 duration: 1.5,
                             }}
-                            className="flex justify-center pt-6 mt-6;">
+                            className="iconA">
                             <SocialIcon
                                 url="https://linkedin.com/in/hollowaydaniel"
                                 fgColor="white"
                                 bgColor="transparent"
                             />
                         </motion.div>
-                        <motion.div className="flex justify-center pt-6"
+                        <motion.div className="iconB"
                             initial={{
                                 x: 500,
                                 opacity: 0,
@@ -100,7 +96,7 @@ export default function Sidear() {
                                 fgColor="white"
                                 bgColor="transparent" />
                         </motion.div>
-                        <motion.div className="flex justify-center pt-6"
+                        <motion.div className="iconB"
                             initial={{
                                 x: -500,
                                 opacity: 0,
