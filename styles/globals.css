@@ -79,7 +79,8 @@
 /* About */
 @layer components {
     .aboutSection{
-        @apply bg-gray-400 text-white h-screen
+        background-color:rgb(36,36,36);
+        @apply  text-white h-screen
     }
 }
 /* Skills */
