@@ -23,7 +23,7 @@
     @apply flex justify-center pb-6 pt-6 mt-6 text-white;
   }
   .profileContainer {
-    @apply pb-6 pt-6 flex flex-col items-center text-center mt-6;
+    @apply pb-6 pt-6 flex flex-col items-center text-center mt-6 z-40;
   }
   .circleA {
     @apply rounded-full absolute border border-[#333333];
@@ -32,13 +32,13 @@
     @apply rounded-full absolute;
   }
   .backgroundCircles {
-    @apply absolute flex justify-center items-center mt-16;
+    @apply absolute flex justify-center items-center mt-16 z-40;
   }
   .selfie {
     @apply flex justify-center h-32 w-32 mx-auto rounded object-cover;
   }
   .navButton {
-    @apply py-2 px-3 border-[#242424] rounded-full uppercase text-sm tracking-widest text-gray-500 hover:border-[#56A4E6]/75 hover:text-[#56A4E6]/75 flex justify-center hover:animate-pulse hover:underline underline-offset-4 decoration-yellow-500;
+    @apply py-2 px-3 border-[#242424] rounded-full uppercase text-sm tracking-widest text-gray-500 hover:border-[#56A4E6]/75 hover:text-[#56A4E6]/75 flex justify-center hover:animate-pulse hover:underline underline-offset-4 decoration-yellow-500 z-50;
   }
   .navList {
     @apply pt-5 mt-5 z-50 lg:pl-0 justify-items-center grid lg:grid-flow-row grid-flow-col lg:grid-cols-1 justify-center font-Comfortaa;
@@ -78,9 +78,9 @@
 @layer components {
   .aboutSection {
     background: radial-gradient(
-      ellipse at center,
-      rgba(136, 173, 219,1) 0%,
-      rgb(136, 173, 219) 35%,
+      ellipse at right,
+      rgb(173, 185, 200) 0%,
+      rgb(161, 179, 201) 60%,
       rgb(103,135,173)
     );
     overflow: hidden;
@@ -92,7 +92,7 @@
   .overlay2 {
     height: 100vh;
     position: relative;
-    @apply absolute w-full opacity-20 bg-black z-10 lg:opacity-10
+    @apply absolute w-full opacity-10 bg-black z-10 lg:opacity-10
   }
   .ocean { 
     height: 5%;
@@ -142,8 +142,206 @@
 /* Skills */
 @layer components {
   .skillsSection {
-    @apply bg-gray-500 text-white h-screen;
+    background: radial-gradient(
+      ellipse at right,
+      rgb(173, 185, 200) 0%,
+      rgb(161, 179, 201) 60%,
+      rgb(103,135,173));
+    @apply text-white h-screen z-10 w-auto min-w-full min-h-full max-w-none;
+
   }
+  @media (max-width:992px){
+    .skills2{
+    background: radial-gradient(
+      ellipse at right,
+      rgb(173, 185, 200) 0%,
+      rgb(161, 179, 201) 60%,
+      rgb(103,135,173));
+    @apply text-white h-screen z-10 w-auto min-w-full min-h-full max-w-none snap-center;
+  }
+}
+@media (min-width:992px){
+    .skills2{
+    display:none;
+    height:1px;
+
+  }
+}
+  .box{
+    margin:15px;
+    margin-top:50px;
+}
+.head{
+    display: inline-block;
+    padding:0px 12px;
+    color: rgb(15, 15, 15);
+    margin-bottom: 20px;
+    margin-left:30px;
+    letter-spacing: 5px;
+    font-size: 11px;
+}
+
+
+.container{
+    width: 100%;
+    margin-left:30px;
+    display: block;
+    margin-top: 30px;
+    border-radius:3px;
+    padding:0 42px 0 10px;
+    margin-left:30px
+    /* background-color: red; */
+}
+.row:before{
+    content: " ";
+    display: table;
+}
+.row:after {
+    clear: both;
+}
+.row_md_12{
+    display: flex;
+    flex-direction: column;
+}
+.timeline_centered {
+    z-index: 1;
+    position: relative;
+    margin-bottom: 30px;
+}
+.timeline_centered:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 4px;
+    background:#f3f2f7;
+    top: 20px;
+    z-index: -1;
+    bottom: 20px;
+    margin-left: 19px;
+}
+.timeline_entry {
+    margin-bottom: 10px;
+    clear: both;
+}
+.timeline_icon {
+    display: block;
+    width: 40px;
+    font-size:20px;
+    height: 40px;
+background-color: #f9bf3f;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    -moz-box-shadow: 0 0 0 5px #f2f3f7;
+    -webkit-box-shadow: 0 0 0 5px #f2f3f7;
+    box-shadow: 0 0 0 5px #f2f3f7;
+    line-height: 35px;
+    float: left;
+}
+.timeline_icon_2 {
+    background: #DE1DB4;
+}
+.timeline_icon_5 {
+    background: #00ffff;
+}
+
+.timeline_icon_4{
+    background: #ff0040;
+}
+
+.timeline_entry_inner {
+    position: relative;
+    top:0px;
+    margin-left: 11.5px;
+    
+}
+.timeline_icon_3 {
+    display: block;
+    width: 20px;
+    font-size:20px;
+    height: 20px;
+    background: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    -moz-box-shadow: 0 0 0 5px #f2f3f7;
+    -webkit-box-shadow: 0 0 0 5px #f2f3f7;
+    box-shadow: 0 0 0 5px #f2f3f7;
+    line-height: 35px;
+    float: left;
+}
+
+/* .heading {  
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.8;
+} */
+.label {
+    position: relative;
+    background: #c1cfda;
+    padding: 1.5em;
+    margin-left: 60px;
+}
+.label h2 {
+    font-size: 20px;
+    font-family: "Quicksand", Arial, sans-serif;
+    font-weight: 500;
+    margin: 0 0 30px 0;
+    color:#126;
+}
+.label h2 span {
+    -webkit-opacity: .4;
+    -moz-opacity: .5;
+    opacity: .6;
+    -ms-filter: alpha(opacity=40);
+    filter: alpha(opacity=40);
+    font-size: 16px;
+}
+
+.label p {
+    margin-bottom: 1.5em;
+    color:#126;
+    opacity: .70;
+    font-size:medium;
+    /* margin-left: 200px; */
+   
+}
+
+p>a{
+    text-decoration: none;
+    color:inherit;
+}
+
+a:hover{
+color:rgb(121, 189, 252);
+text-decoration: none;
+}
+
+@keyframes text{
+    from{transform: translateX(-30px);
+        opacity:0.1;
+    }
+    /* to{opacity: 1;} */
+  }
+
+  
+  @media (max-width:992px){
+    .box{
+        text-align: center;
+    }
+}
+
+@media (max-width:440px){
+    .container{
+        padding:0 42px 0 0;
+    }
+}
 }
 /* Projects */
 @layer components {

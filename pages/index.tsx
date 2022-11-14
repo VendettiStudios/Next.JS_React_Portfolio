@@ -5,6 +5,7 @@ import Hero from '../components/Hero'
 import Projects from '../components/Projects'
 import Sidebar from '../components/Sidebar'
 import Skills from '../components/Skills'
+import Skills2 from '../components/Skills2'
 
 
 
@@ -29,6 +30,10 @@ export default function Home() {
       {/* Skills */}
       <section id="skills" className="snap-center">
         <Skills />
+        </section>
+        {/* Skills overflow mobile */}
+        <section id="skills2" className="">
+        <Skills2 />
       </section>
       {/* Projects */}
       <section id="projects" className="snap-center">
