@@ -78,4 +78,25 @@
 }
 /* About */
 @layer components {
+    .aboutSection{
+        @apply bg-gray-400 text-white h-screen
+    }
+}
+/* Skills */
+@layer components {
+    .skillsSection{
+        @apply bg-gray-500 text-white h-screen
+    }
+}
+/* Projects */
+@layer components {
+    .projectSection{
+        @apply bg-gray-600 text-white h-screen
+    }
+}
+/* Contact */
+@layer components {
+    .contactSection{
+        @apply bg-gray-700 text-white h-screen
+    }
 }

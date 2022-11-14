@@ -1,7 +1,10 @@
 import Head from 'next/head'
 import About from '../components/About'
+import Contact from '../components/Contact'
 import Hero from '../components/Hero'
+import Projects from '../components/Projects'
 import Sidebar from '../components/Sidebar'
+import Skills from '../components/Skills'
 
 
 
@@ -20,12 +23,21 @@ export default function Home() {
       <Hero />
       </section>
       {/* About */}
-      <section className="snap-center" >
+      <section className="snap-center">
       <About />
       </section>
       {/* Skills */}
+      <section className="snap-center">
+        <Skills />
+      </section>
       {/* Projects */}
+      <section className="snap-center">
+        <Projects />
+      </section>
       {/* Contact Me */}
+      <section className="snap-center">
+        <Contact />
+      </section>
     </div>
   )
 }
