@@ -8,7 +8,7 @@
 
 @layer base {
   body {
-    background-color: black;
+    background-image:url(Aurora.png);
   }
 }
 /* sidebar  */
@@ -87,10 +87,10 @@
     @apply text-white h-screen relative;
   } */
   .aboutSection {
-    background-image:url('/aurora.png');
+    background-image:url('/Aurora.png');
     overflow: hidden;
     background-size: cover;
-    @apply text-white h-screen relative z-30;
+    @apply text-white h-screen relative;
   }
   .aboutContent {
     @apply font-Comfortaa relative grid lg:grid-rows-2 items-center justify-center text-center overflow-hidden lg:mx-6 lg:px-6 pt-6 z-20;
