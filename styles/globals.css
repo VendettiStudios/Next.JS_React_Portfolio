@@ -76,7 +76,7 @@
 }
 /* About */
 @layer components {
-  .aboutSection {
+  /* .aboutSection {
     background: radial-gradient(
       ellipse at right,
       rgb(173, 185, 200) 0%,
@@ -85,15 +85,21 @@
     );
     overflow: hidden;
     @apply text-white h-screen relative;
+  } */
+  .aboutSection {
+    background-image:url('/aurora.png');
+    overflow: hidden;
+    background-size: cover;
+    @apply text-white h-screen relative z-30;
   }
   .aboutContent {
     @apply font-Comfortaa relative grid lg:grid-rows-2 items-center justify-center text-center overflow-hidden lg:mx-6 lg:px-6 pt-6 z-20;
   }
-  .overlay2 {
+  /* .overlay2 {
     height: 100vh;
     position: relative;
     @apply absolute w-full opacity-10 bg-black z-10 lg:opacity-10
-  }
+  } */
   .ocean { 
     height: 5%;
     width:100%;
