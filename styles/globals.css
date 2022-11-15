@@ -8,7 +8,7 @@
 
 @layer base {
   body {
-    background-image:url(Aurora.png);
+    background-image:url("/aurora.png");
   }
 }
 /* sidebar  */
@@ -87,7 +87,7 @@
     @apply text-white h-screen relative;
   } */
   .aboutSection {
-    background-image:url('/Aurora.png');
+    background-image:url('/aurora.png');
     overflow: hidden;
     background-size: cover;
     @apply text-white h-screen relative;
