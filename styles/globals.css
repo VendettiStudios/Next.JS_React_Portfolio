@@ -8,7 +8,7 @@
 
 @layer base {
   body {
-    background-image:url("/aurora.png");
+    background-image:url(https://imagedelivery.net/WuNJ9qXloNU2BNpKhSqjvQ/5ba3effa-5032-4b31-ffc8-62da87a4a000/public);
   }
 }
 /* sidebar  */
@@ -87,7 +87,7 @@
     @apply text-white h-screen relative;
   } */
   .aboutSection {
-    background-image:url('/aurora.png');
+    background:url(https://imagedelivery.net/WuNJ9qXloNU2BNpKhSqjvQ/5ba3effa-5032-4b31-ffc8-62da87a4a000/public);
     overflow: hidden;
     background-size: cover;
     @apply text-white h-screen relative;
@@ -106,7 +106,7 @@
     position:absolute;
     bottom:0;
     left:0;
-    background: #015871;
+    background: white;
     filter:contrast() grayscale() invert() brightness(50);
     @apply z-0
   }
