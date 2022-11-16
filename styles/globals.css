@@ -100,7 +100,7 @@
     border-radius: 16px;
     box-shadow:0 4px 4px 6px rgba(0,0,0,0.2);
     backdrop-filter: blur(400px);
-@apply ml-6 lg:mt-6 lg:pt-6 grid justify-center text-white
+@apply ml-6 lg:mt-6 lg:pt-6 grid justify-center text-white z-10
 }
   .ocean { 
     height: 5%;
@@ -110,6 +110,7 @@
     left:0;
     background: black;
     filter:contrast() grayscale() invert() brightness(50);
+    @apply z-0 
   }
   .wave {
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg)
