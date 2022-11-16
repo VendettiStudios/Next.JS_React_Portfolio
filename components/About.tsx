@@ -10,11 +10,7 @@ const About = (props: Props) => {
                 <div className="card">
                 <h3 className="pb-6 lg:text-3xl">ABOUT</h3>
                 <div className="lg:text-xl">
-                    <p>My name is <b>Daniel Holloway</b>! I am passionate about <b>creative design, development, and innovation</b>. I express this currently via creating impactful <b>mobile friendly websites and applications</b>. I began learning graphic design and front end web design and development 10 years ago, and improved my foundation within UC Berkeley.
-                        <br />
-                        <br />
-                        The learning never stops! Every day I put in time to expand & further my knowledge in modern development to help achieve client & employer satisfaction.
-                        I am a very fast learner, put me onto a task and I'll master it!
+                    <p> I am a full-stack engineer with an eye for design. I like to consider myself a jack-of-all-trades, handing projects from design to deployment - digital product development, and helping debug problem points. I love traveling and my world travels have led me to a deep appreciation for expression diversity via design. I am most enthusiastic about front-end development because I enjoy challenges and how many different ways there are to go about it. Though I highly appreciate the black and white nature straight-forwardness of back-end development.
                     </p>
                 </div></div>
             </div>
