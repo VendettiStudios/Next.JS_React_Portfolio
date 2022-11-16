@@ -7,7 +7,7 @@ type Props = {}
 const Hero = (props: Props) => {
     const videoID = "https://customer-y9cdb7xgb9ciakj4.cloudflarestream.com/7102b82195e7169ae2da16b6023be17f/iframe?muted=true&loop=true&autoplay=true&controls=false"
     return (
-        <div className="h-screen overflow-hidden">
+        <div className="heroSection h-screen overflow-hidden">
             <header className="relative flex items-center justify-center h-screen mb-12 overflow-hidden">
                 <div className="overlay fixed"></div>
                 <div id="stream">
