@@ -88,7 +88,7 @@
   }
   .aboutContent {
     align-items:center;
-    @apply font-Comfortaa items-center justify-center text-center overflow-hidden pt-6 z-20 lg:flex;
+    @apply font-Comfortaa items-center justify-center text-center overflow-hidden pt-6 z-30 lg:flex;
   }
   .card{
     width:90%;
@@ -100,7 +100,7 @@
     border-radius: 16px;
     box-shadow:0 4px 4px 6px rgba(0,0,0,0.2);
     backdrop-filter: blur(400px);
-@apply ml-6 mt-6 grid justify-center
+@apply ml-6 lg:mt-6 lg:pt-6 grid justify-center text-white
 }
   .ocean { 
     height: 5%;
@@ -110,7 +110,6 @@
     left:0;
     background: black;
     filter:contrast() grayscale() invert() brightness(50);
-    @apply z-0
   }
   .wave {
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg)
