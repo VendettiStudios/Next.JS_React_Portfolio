@@ -6,9 +6,8 @@ const Skills = (props: Props) => {
     return (
         <div className="skillsSection">
             <div className="box" id="skills">
-                {/* <ScrollAnimation offset={0} animateIn="fadeInLeft" duration={2} animateOnce={true} initiallyVisible={true}> */}
-                <span className="head">MY Skills & Expertise</span>
-                <section className="container">
+                <span className="head">Skills & Expertise</span>
+                <section className="container1">
                     <div className="container_content">
                         <div className="row">
                             <div className="row_md_12">
@@ -17,24 +16,24 @@ const Skills = (props: Props) => {
                                         <div className="timeline_icon timeline_icon_5" >
                                         </div>
                                         <div className="label">
-                                            <h2>Full-Stack Web Development and Design <span>MERN</span></h2>
-                                            <p>I picked up a solid foundation for web development at UC Berkeley. We learned modern frameworks, as well as older frameworks. This is helpful for older companies that are still using older frameworks, whether they want to migrate / transition to a new framework or not!</p>
-                                            <br />
-                                            <p>Below are some of my skills!</p>
+                                            <h2>Full-Stack Web Development and Design</h2>
+                                            <p>The stack I use mainly is the MERN stack, though I'm also proficient with several other frameworks! Below are some of the frameworks and tools I've used.</p>
                                         </div>
                                     </article>
                                     <article className="timeline_entry">
                                         <div className="timeline_icon">
                                         </div>
                                         <div className="label">
-                                            <h2>Front End<span> React.js / React.ts, VanillaJS, JavaScript, JQuery, HTML5, CSS - Bootstrap, React.Bootstrap, Bulma</span></h2>
+                                            <h2>Front End</h2>
+                                            <p>ReactJS, VanillaJS, JavaScript, JQuery, HTML5, CSS, Bootstrap, JSON, React-Bootstrap, Bulma, Tailwindcss, MUI, TypeScript, HeadlessUI</p>
                                         </div>
                                     </article>
                                     <article className="timeline_entry">
                                         <div className="timeline_icon timeline_icon_2" >
                                         </div>
                                         <div className="label">
-                                            <h2>BackEnd<span> MongoDB, SQL, Sequelize, APOLLO GRAPHQL, PostMan, Insmonia, CloudFlare, Node.js, Express.js, MVC, JavaScript Computer Science, State, Redux, Cloudflare DNS</span></h2>
+                                            <h2>BackEnd</h2>
+                                            <p>MongoDB, SQL, Sequelize, APOLLO GRAPHQL, PostMan, Insmonia, Node.js, Express.js, MVC, JavaScript Computer Science, State, Redux, DNS</p>
                                         </div>
                                     </article>
                                     <article>
