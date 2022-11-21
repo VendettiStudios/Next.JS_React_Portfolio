@@ -13,7 +13,6 @@ const Skills = (props: Props) => {
                         <div className="row">
                             <div className="row_md_12">
                                 <div className="timeline_centered">
-                                    {/* <ScrollAnimation offset={0} animateIn="fadeInLeft" duration={2.4} animateOnce={true} initiallyVisible={true}> */}
                                     <article className="timeline_entry">
                                         <div className="timeline_icon timeline_icon_5" >
                                         </div>
@@ -24,8 +23,6 @@ const Skills = (props: Props) => {
                                             <p>Below are some of my skills!</p>
                                         </div>
                                     </article>
-                                    {/* </ScrollAnimation>
-                                        <ScrollAnimation offset={0} animateIn="fadeInLeft" duration={2.4} animateOnce={true} initiallyVisible={true}> */}
                                     <article className="timeline_entry">
                                         <div className="timeline_icon">
                                         </div>
@@ -33,8 +30,6 @@ const Skills = (props: Props) => {
                                             <h2>Front End<span> React.js / React.ts, VanillaJS, JavaScript, JQuery, HTML5, CSS - Bootstrap, React.Bootstrap, Bulma</span></h2>
                                         </div>
                                     </article>
-                                    {/* </ScrollAnimation>
-                                        <ScrollAnimation offset={0} animateIn="fadeInLeft" duration={2.4} animateOnce={true} initiallyVisible={true}> */}
                                     <article className="timeline_entry">
                                         <div className="timeline_icon timeline_icon_2" >
                                         </div>
@@ -42,9 +37,6 @@ const Skills = (props: Props) => {
                                             <h2>BackEnd<span> MongoDB, SQL, Sequelize, APOLLO GRAPHQL, PostMan, Insmonia, CloudFlare, Node.js, Express.js, MVC, JavaScript Computer Science, State, Redux, Cloudflare DNS</span></h2>
                                         </div>
                                     </article>
-                                    {/* </ScrollAnimation> */}
-
-                                    {/* <ScrollAnimation offset={0} animateIn="fadeInLeft" duration={2.4} animateOnce={true} initiallyVisible={true}> */}
                                     <article>
                                         <div className="timeline_icon timeline_icon_4" >
                                         </div>
@@ -54,13 +46,11 @@ const Skills = (props: Props) => {
                                             </p>
                                         </div>
                                     </article>
-                                    {/* </ScrollAnimation> */}
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                {/* </ScrollAnimation> */}
             </div>
         </div>
     )

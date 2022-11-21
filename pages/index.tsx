@@ -4,7 +4,7 @@ import About from '../components/About'
 import Hero from '../components/Hero'
 // import Projects from '../components/Projects'
 import Sidebar from '../components/Sidebar'
-// import Skills from '../components/Skills'
+import Skills from '../components/Skills'
 // import Skills2 from '../components/Skills2'
 
 
@@ -28,9 +28,9 @@ export default function Home() {
       <About />
       </section>
       {/* Skills */}
-      {/* <section id="skills" className="snap-start">
+      <section id="skills" className="snap-start">
         <Skills />
-        </section> */}
+        </section>
         {/* Skills overflow mobile */}
         {/* <section id="skills2" className="">
         <Skills2 />
