@@ -160,17 +160,13 @@
   }
 
   .head {
-    @apply ml-6 pl-6 p-6 grid justify-center font-Comfortaa text-white;
+    @apply ml-6 pl-6 p-6 grid justify-center font-Comfortaa text-white text-2xl;
   }
 
   .container1 {
-    /* width: 100%; */
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 30px;
-    /* border-radius:3px; */
-    /* padding:0 42px 0 10px; */
-    /* background-color: red; */
   }
   .row:before {
     content: " ";
@@ -202,6 +198,7 @@
   .timeline_entry {
     margin-bottom: 10px;
     clear: both;
+    @apply font-Comfortaa
   }
   .timeline_icon {
     display: block;
@@ -265,7 +262,6 @@
   }
   .label h2 {
     font-size: 20px;
-    font-family: "Quicksand", Arial, sans-serif;
     font-weight: 500;
     margin: 0 0 30px 0;
     color: white;
@@ -284,7 +280,6 @@
     color: white;
     opacity: 0.7;
     font-size: medium;
-    /* margin-left: 200px; */
   }
 
   p > a {
