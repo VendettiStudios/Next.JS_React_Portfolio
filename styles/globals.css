@@ -160,7 +160,7 @@
   }
 
   .head {
-    @apply ml-6 pl-6 pr-6 mr-6 pt-6 grid justify-center font-Comfortaa text-white text-2xl;
+    @apply ml-6 pl-6 pr-6 mr-6 pt-6 pb-3 grid justify-center font-Comfortaa text-white text-2xl;
   }
 
   .container1 {
@@ -309,7 +309,7 @@
     @apply font-Comfortaa;
   }
   .projectGrid {
-    @apply grid lg:grid-cols-3 grid-flow-row-dense grid-rows-3 lg:grid-rows-1 justify-center pb-6;
+    @apply grid lg:grid-cols-3 grid-flow-row-dense grid-rows-3 lg:grid-rows-1 justify-center pb-6 pt-6;
   }
   .imageContainer1 {
     background: rgba(255, 255, 255, 0.09);
@@ -347,6 +347,6 @@
     @apply font-Comfortaa;
   }
   .letsTalk{
-    @apply text-yellow-500 flex justify-center pt-6 mt-6 text-xl pb-3
+    @apply text-yellow-500 flex justify-center pt-6 mt-6 text-xl pb-5
   }
 }
