@@ -13,7 +13,7 @@ const Contact = (props: Props) => {
                                 network="email"
                                 fgColor="white"
                                 bgColor="transparent"
-                            /><p className="pt-3 text-white">danielholloway.contact@gmail.com</p></span>
+                            /><p className="pt-3 pb-6 mb-6 text-white">danielholloway.contact@gmail.com</p></span>
         </div>
     )
 }

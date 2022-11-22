@@ -347,6 +347,6 @@
     @apply font-Comfortaa;
   }
   .letsTalk{
-    @apply text-yellow-500 flex justify-center pt-6 mt-6 text-xl pb-5
+    @apply text-yellow-500 flex justify-center pt-3 mt-3 text-xl pb-5
   }
 }
