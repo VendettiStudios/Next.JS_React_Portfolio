@@ -160,7 +160,7 @@
   }
 
   .head {
-    @apply ml-6 pl-6 p-6 grid justify-center font-Comfortaa text-white text-2xl;
+    @apply ml-6 pl-6 pr-6 mr-6 pt-6 grid justify-center font-Comfortaa text-white text-2xl;
   }
 
   .container1 {
@@ -305,7 +305,6 @@
 @layer components {
   .projectSection {
     background: url(https://imagedelivery.net/WuNJ9qXloNU2BNpKhSqjvQ/5ba3effa-5032-4b31-ffc8-62da87a4a000/public);
-    height:50%;
     background-size: cover;
     @apply font-Comfortaa;
   }
@@ -343,6 +342,11 @@
 /* Contact */
 @layer components {
   .contactSection {
-    @apply bg-gray-700 text-white h-screen;
+    background: url(https://imagedelivery.net/WuNJ9qXloNU2BNpKhSqjvQ/5ba3effa-5032-4b31-ffc8-62da87a4a000/public);
+    background-size: cover;
+    @apply font-Comfortaa;
+  }
+  .letsTalk{
+    @apply text-yellow-500 flex justify-center pt-6 mt-6 text-xl pb-3
   }
 }

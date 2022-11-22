@@ -112,11 +112,12 @@ export default function Sidear() {
                             transition={{
                                 duration: 1.5,
                             }}>
+                                <a href="mailto:danielholloway.contact@gmail.com">
                             <SocialIcon
                                 network="email"
                                 fgColor="white"
                                 bgColor="transparent"
-                            />
+                            /></a>
                         </motion.div>
                     </div>
                 </Disclosure.Panel>
