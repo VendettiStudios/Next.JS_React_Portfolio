@@ -5,7 +5,7 @@ type Props = {}
 const Skills = (props: Props) => {
     return (
         <div className="skillsSection">
-            <div className="box" id="skills">
+            <div className="" id="skills">
                 <span className="head">Skills & Expertise</span>
                 <section className="container1">
                     <div className="container_content">

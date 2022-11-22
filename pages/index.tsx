@@ -2,11 +2,11 @@ import Head from 'next/head'
 import About from '../components/About'
 // import Contact from '../components/Contact'
 import Hero from '../components/Hero'
+import Projects from '../components/Projects'
 // import Projects from '../components/Projects'
 import Sidebar from '../components/Sidebar'
 import Skills from '../components/Skills'
-// import Skills2 from '../components/Skills2'
-
+import Image from "next/image";
 
 
 export default function Home() {
@@ -31,14 +31,10 @@ export default function Home() {
       <section id="skills" className="snap-start">
         <Skills />
         </section>
-        {/* Skills overflow mobile */}
-        {/* <section id="skills2" className="">
-        <Skills2 />
-      </section> */}
       {/* Projects */}
-      {/* <section id="projects" className="snap-center">
+      <section id="projects" className="snap-start">
         <Projects />
-      </section> */}
+      </section>
       {/* Contact Me */}
       {/* <section id="contact" className="snap-center">
         <Contact />
