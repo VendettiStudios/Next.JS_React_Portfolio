@@ -32,5 +32,4 @@ const Hero = (props: Props) => {
         </div>
     )
 }
-
 export default Hero
