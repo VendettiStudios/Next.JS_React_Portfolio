@@ -12,7 +12,7 @@ const Hero = (props: Props) => {
                 <div className="overlay fixed"></div>
                     <Stream
                         autoplay
-                        src="/public/water.mp4"
+                        src={videoID}
                         className="flex"
                         loop
                     />
