@@ -65,7 +65,11 @@
     @apply text-white relative z-30;
   }
   #stream {
+    object-fit: cover;
     height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    overflow:hidden;
     @apply absolute z-10 w-auto min-w-full min-h-full max-w-none;
   }
   @media (max-width: 767px) {
