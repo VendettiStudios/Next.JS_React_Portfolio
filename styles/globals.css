@@ -59,6 +59,9 @@
   .aspect-video{
     height:100vh !important;
   }
+  .video{
+    height:100vh;
+  }
   .content {
     @apply text-white relative z-30;
   }

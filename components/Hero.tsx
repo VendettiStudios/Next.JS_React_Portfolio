@@ -13,7 +13,7 @@ const Hero = (props: Props) => {
                 <div id="stream">
                     <Stream
                         src={videoID}
-                        className="aspect-video"
+                        className="video"
                         autoplay
                         loop
                     />
