@@ -56,20 +56,10 @@
     position: fixed;
     @apply absolute w-full opacity-20 bg-black -z-20 lg:opacity-25;
   }
-  .aspect-video{
-    height:100vh !important;
-  }
-  .video{
-    height:100vh;
-  }
   .content {
     @apply text-white relative z-30;
   }
   #stream {
-    object-fit: cover;
-    height: 100vh;
-    min-width: 100%;
-    min-height: 100%;
     overflow:hidden;
     @apply absolute z-10 w-auto min-w-full min-h-full max-w-none;
   }
