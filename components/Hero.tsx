@@ -11,9 +11,10 @@ const Hero = (props: Props) => {
             <header className="relative flex items-center justify-center h-screen mb-12 overflow-hidden">
                 <div className="overlay fixed"></div>
                     <Stream
-                        autoplay
+                        
                         src={videoID}
                         className="flex"
+                        autoplay
                         loop
                     />
                     {/* <div className="fullscreen_bg">
