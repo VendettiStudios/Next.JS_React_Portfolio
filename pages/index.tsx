@@ -6,7 +6,6 @@ import Projects from '../components/Projects'
 // import Projects from '../components/Projects'
 import Sidebar from '../components/Sidebar'
 import Skills from '../components/Skills'
-import Image from "next/image";
 import Contact from '../components/Contact'
 
 
