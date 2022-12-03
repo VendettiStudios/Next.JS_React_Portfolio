@@ -56,6 +56,9 @@
     position: fixed;
     @apply absolute w-full opacity-20 bg-black -z-20 lg:opacity-25;
   }
+  .aspect-video{
+    position:static !important;
+  }
   .content {
     @apply text-white relative z-30;
   }
