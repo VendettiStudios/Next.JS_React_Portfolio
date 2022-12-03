@@ -18,7 +18,7 @@ const Hero = (props: Props) => {
                     /> */}
                     <div className="fullscreen_bg">
                     <video autoPlay muted loop className="fullscreen_bg_video">
-        <source src="../public/water.mp4" type="video/mp4"/>
+        <source src={videoID} type="video/mp4"/>
       </video></div>
                 <div className="content">
                     <h1 className="font-Comfortaa lg:text-5xl text-3xl text-zinc-300">Hello,</h1>
