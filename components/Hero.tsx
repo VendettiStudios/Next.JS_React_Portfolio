@@ -10,13 +10,16 @@ const Hero = (props: Props) => {
         <div className="heroSection h-screen overflow-hidden">
             <header className="relative flex items-center justify-center h-screen mb-12 overflow-hidden">
                 <div className="overlay fixed"></div>
-                <div id="stream">
+                {/* <div id="stream">
                     <Stream
                         src={videoID}
                         className="aspect-video"
                         autoplay
                         loop
                     />
+                </div> */}
+                <div className="backgroundVideo">
+                <iframe src="https://player.vimeo.com/video/777748066?background=1&loop=1" width="1300" height="900"></iframe>
                 </div>
                 <div className="content">
                     <h1 className="font-Comfortaa lg:text-5xl text-3xl text-zinc-300">Hello,</h1>
