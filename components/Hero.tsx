@@ -10,17 +10,14 @@ const Hero = (props: Props) => {
         <div className="heroSection h-screen overflow-hidden">
             <header className="relative flex items-center justify-center h-screen mb-12 overflow-hidden">
                 <div className="overlay fixed"></div>
+                <div id="stream">
                     <Stream
-                        
                         src={videoID}
-                        className="flex"
+                        className="aspect-video"
                         autoplay
                         loop
                     />
-                    {/* <div className="fullscreen_bg">
-                    <video autoPlay muted loop className="fullscreen_bg_video">
-        <source src={videoID} type="video/mp4"/>
-      </video></div> */}
+                </div>
                 <div className="content">
                     <h1 className="font-Comfortaa lg:text-5xl text-3xl text-zinc-300">Hello,</h1>
 
