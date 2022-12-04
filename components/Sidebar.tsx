@@ -44,16 +44,16 @@ export default function Sidear() {
 
                     <div className="navList">
                         <Link href="#about">
-                            <button className="navButton">About</button>
+                            <Disclosure.Button className="navButton">About</Disclosure.Button>
                         </Link>
                         <Link href="#skills">
-                            <button className="navButton">Skills</button>
+                            <Disclosure.Button className="navButton">Skills</Disclosure.Button>
                         </Link>
                         <Link href="#projects">
-                            <button className="navButton">Projects</button>
+                            <Disclosure.Button className="navButton">Projects</Disclosure.Button>
                         </Link>
                         <Link href="#contact">
-                            <button className="navButton">Contact</button>
+                            <Disclosure.Button className="navButton">Contact</Disclosure.Button>
                         </Link>
                     </div>
 
