@@ -19,7 +19,7 @@ const Hero = (props: Props) => {
                     />
                 </div> */}
                 <div className="backgroundVideo">
-                <iframe src="https://player.vimeo.com/video/777748066?background=1&loop=1" width="1300" height="900"></iframe>
+                <iframe src="https://player.vimeo.com/video/777748066?background=1&loop=1" width="2800" height="1575"></iframe>
                 </div>
                 <div className="content">
                     <h1 className="font-Comfortaa lg:text-5xl text-3xl text-zinc-300">Hello,</h1>

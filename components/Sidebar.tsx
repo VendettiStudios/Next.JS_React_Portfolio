@@ -1,5 +1,5 @@
-import React from "react";
-import { Disclosure } from "@headlessui/react";
+import React, {useState} from "react";
+import { Disclosure, Menu } from "@headlessui/react";
 import { SocialIcon } from "react-social-icons"
 import { motion } from "framer-motion"
 import { Cursor, useTypewriter } from "react-simple-typewriter"
@@ -7,6 +7,7 @@ import Image from 'next/image'
 import BackgroundCircles from './BackgroundCircles'
 import Link from 'next/link'
 import { Spiral as Hamburger } from 'hamburger-react'
+import { GiHamburgerMenu } from "react-icons/gi";
 type Props = {}
 
 export default function Sidear() {
@@ -19,11 +20,14 @@ export default function Sidear() {
         loop: true,
         delaySpeed: 2000,
     });
+    const [isOpen, setOpen] = useState(false)
+
     return (
         <div>
             <Disclosure as="nav">
                 <Disclosure.Button className="hamburger peer group">
-                    <Hamburger size={20} />
+                    <Hamburger toggled={isOpen} toggle={setOpen} size={20}
+                    />
                 </Disclosure.Button>
 
                 <Disclosure.Panel className="sideBar bg-[rgb(36,36,36)] peer:transition">
