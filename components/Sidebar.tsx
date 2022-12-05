@@ -20,14 +20,12 @@ export default function Sidear() {
         loop: true,
         delaySpeed: 2000,
     });
-    const [isOpen, setOpen] = useState(false)
 
     return (
         <div>
             <Disclosure as="nav">
-                <Disclosure.Button className="hamburger peer group">
-                    <Hamburger toggled={isOpen} toggle={setOpen} size={20}
-                    />
+                <Disclosure.Button className="hamburger peer group pt-6 pl-6 text-gray-400 ">
+                    <GiHamburgerMenu size="1.7em"  />
                 </Disclosure.Button>
 
                 <Disclosure.Panel className="sideBar bg-[rgb(36,36,36)] peer:transition">
