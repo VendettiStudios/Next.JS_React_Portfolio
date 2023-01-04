@@ -63,8 +63,8 @@
     height: 100%;
     @apply absolute z-10 w-auto min-w-full min-h-full max-w-none;
   } */
-  .backgroundVideo{
-    @apply absolute overflow-hidden
+  .backgroundVideo {
+    @apply absolute overflow-hidden;
   }
   @media (max-width: 767px) {
     #stream {
@@ -92,6 +92,18 @@
   .aboutContent {
     align-items: center;
     @apply font-Comfortaa items-center justify-center text-center overflow-hidden pt-6 z-30 lg:flex mt-6 pb-4;
+  }
+  .slide-up {
+    animation: slide-up 2s ease-out;
+  }
+
+  @keyframes slide-up {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
   }
   .content {
     @apply pb-4 mx-2;
@@ -349,7 +361,7 @@
     background-size: cover;
     @apply font-Comfortaa;
   }
-  .letsTalk{
-    @apply text-yellow-500 flex justify-center pt-3 mt-3 text-xl pb-5
+  .letsTalk {
+    @apply text-yellow-500 flex justify-center pt-3 mt-3 text-xl pb-5;
   }
 }
