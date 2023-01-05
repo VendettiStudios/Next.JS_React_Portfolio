@@ -3,14 +3,14 @@ import React, { useState, useEffect, useRef } from 'react'
 type Props = {}
 
 const About = (props: Props) => {
-  const [slideUp, setSlideUp] = useState(false)
+  const [slideUp, setSlideUp] = useState(true)
   const aboutRef = useRef(null)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setSlideUp(true)
+          setSlideUp(false)
           observer.disconnect()
         }
       },
@@ -24,7 +24,13 @@ const About = (props: Props) => {
   return (
     <div className="aboutSection" ref={aboutRef}>
       <div className="overlay2"></div>
-      <div className={`aboutContent ${slideUp ? 'slide-up' : ''}`}>
+      <div
+        className={`aboutContent ${slideUp ? 'slide-up' : ''}`}
+        style={{
+          animation: slideUp ? 'none' : 'slide-up 2s ease-out',
+          visibility: slideUp ? 'hidden' : 'visible',
+        }}
+      >
         <div className="card">
           <h3 className="about pb-6 lg:text-3xl">ABOUT</h3>
           <div className="content lg:text-xl lg:px-6">

@@ -94,7 +94,7 @@
     @apply font-Comfortaa items-center justify-center text-center overflow-hidden pt-6 z-30 lg:flex mt-6 pb-4;
   }
   .slide-up {
-    animation: slide-up 2s ease-out;
+    animation: slide-up 4s ease-out;
   }
 
   @keyframes slide-up {
