@@ -33,7 +33,7 @@ const Skills = (props: Props) => {
                                         </div>
                                         <div className="label">
                                             <h2>BackEnd</h2>
-                                            <p>MongoDB - Mongoose, SQL - Sequelize, GraphQL, PostMan, Insmonia, Node.js, Express.js, MVC, State, Redux, DNS, API Integration - REST, Object-Oriented-Programming, Next.js, Authentication, webpack.js</p>
+                                            <p>MongoDB - Mongoose, SQL - Sequelize, ApolloGraphQL, GraphQL, PostMan, Insmonia, Node.js, Express.js, MVC, State, Redux, DNS, API Integration - REST, Object-Oriented-Programming, Next.js, Authentication, webpack.js</p>
                                         </div>
                                     </article>
                                     <article>
