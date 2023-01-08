@@ -41,7 +41,7 @@ const Skills = (props: Props) => {
                                         </div>
                                         <div className="label">
                                             <h2>UX/UI Tools & Deployment Tools</h2>
-                                            <p>Figma, Github, CloudFlare, Vercel, Heroku, EC2</p>
+                                            <p>Figma, Github, CloudFlare, Vercel, Heroku, EC2, Adobe Softwares(Illustrator, Photoshop, InDesign, Premiere)</p>
                                         </div>
                                     </article>
                                 </div>
