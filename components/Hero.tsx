@@ -20,6 +20,7 @@ const Hero = (props: Props) => {
                     </span>
 
                     <h2 className="font-Comfortaa text-zinc-300 lg:text-2xl pt-2 font-bold">Full-Stack Developer and Designer</h2>
+                    <h3 className="font-Comfortaa text-zinc-300 lg:text-xl pt-2 font-bold">Based in San Diego, CA</h3>
                 </div>
             </header>
         </div>
