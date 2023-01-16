@@ -7,7 +7,7 @@ import Image from 'next/image'
 import BackgroundCircles from './BackgroundCircles'
 import Link from 'next/link'
 import { Spiral as Hamburger } from 'hamburger-react'
-import { GiHamburgerMenu } from "react-icons/gi";
+
 type Props = {}
 
 export default function Sidebar() {

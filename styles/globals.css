@@ -59,10 +59,7 @@
   .content {
     @apply text-white relative z-30;
   }
-  /* #stream {
-    height: 100%;
-    @apply absolute z-10 w-auto min-w-full min-h-full max-w-none;
-  } */
+
   .backgroundVideo {
     @apply absolute overflow-hidden;
   }
